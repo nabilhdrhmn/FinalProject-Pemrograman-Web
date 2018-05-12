@@ -12,10 +12,50 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap.css') }}">
+
     <script type="text/javascript" src="{{ url('js/bootstrap.js') }}"></script>
 </head>
 <body>
     <div id="app">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">CARI SEKOLAH COK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item @yield('nav-about')">
+              <a class="nav-link" href="/about">About
+              </a>
+            </li>
+                        @guest
+                            <li class="nav-item @yield('nav-login')"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                            <li class="nav-item @yield('nav-register')"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
+                        @else
+                            <li class="nav-item">
+                                <a href="/" class="nav-link" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                            </li>
+                            <li>
+                                        <a class="nav-link" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                
+                            </li>
+                        @endguest
+          </ul>
+        </div>
+      </div>
+    </nav>
+
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -73,6 +113,8 @@
         </nav>
 
         @yield('content')
+
+
     </div>
 
     <!-- Scripts -->

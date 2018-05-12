@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('nav-register','active')
+
 @section('content')
 <div class="container">
     <div class="row">

@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('nav-login','active')
+
 @section('content')
 <div class="container">
     <div class="row">
