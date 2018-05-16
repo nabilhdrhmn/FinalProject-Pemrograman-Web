@@ -19,7 +19,9 @@
     <div id="app">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="/">CARI SEKOLAH COK</a>
+        <img class="logo" href="/" src="{{'logo2.png'}}" style="width:30px;height:60px;padding-right: 4px">
+        <a class="navbar-brand" href="/">CARI SEKOLAH</a>
+        <input id="search" type="text" class="search-control" name="search" style="width: 320px" placeholder="Search">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
