@@ -37,10 +37,10 @@
         </div>
           <br>
           <div class="card">
-            <img src="/#" alt="John" style="width:100%">
-            <h1>John Doe</h1>
-            <p class="title">CEO & Founder, Example</p>
-            <p>NRP: </p>
+            <img src="/#" alt="Falah" style="width:100%">
+            <h1>Falah Ath Thaariq Razzaq</h1>
+            <p class="title">Front-end</p>
+            <p>NRP: 5116100151</p>
             <div style="margin: 24px 0;">
               <a href="#"><i class="fa fa-dribbble"></i></a> 
               <a href="#"><i class="fa fa-twitter"></i></a>  
@@ -48,10 +48,10 @@
               <a href="#"><i class="fa fa-facebook"></i></a> 
             </div>
              <div class="card">
-            <img src="/#" alt="John" style="width:100%">
-            <h1>John Doe</h1>
-            <p class="title">CEO & Founder, Example</p>
-            <p>NRP: </p>
+            <img src="/#" alt="Nabil" style="width:100%">
+            <h1>Nabil H</h1>
+            <p class="title">Back-end</p>
+            <p>NRP: 5116100 </p>
             <div style="margin: 24px 0;">
               <a href="#"><i class="fa fa-dribbble"></i></a> 
               <a href="#"><i class="fa fa-twitter"></i></a>  
@@ -59,10 +59,10 @@
               <a href="#"><i class="fa fa-facebook"></i></a> 
             </div>
              <div class="card">
-            <img src="/#" alt="John" style="width:100%">
-            <h1>John Doe</h1>
-            <p class="title">CEO & Founder, Example</p>
-            <p>NRP: </p>
+            <img src="/#" alt="Glenn" style="width:100%">
+            <h1>Glenn</h1>
+            <p class="title">Back-end</p>
+            <p>NRP: 5115100</p>
             <div style="margin: 24px 0;">
               <a href="#"><i class="fa fa-dribbble"></i></a> 
               <a href="#"><i class="fa fa-twitter"></i></a>  
