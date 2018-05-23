@@ -34,39 +34,38 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-        </div>
           <br>
-          <div class="card">
-            <img src="/#" alt="Falah" style="width:100%">
+          <div class="card-porto">
+            <img src="/#" alt="Falah" style="width:50%">
             <h1>Falah Ath Thaariq Razzaq</h1>
-            <p class="title">Front-end</p>
-            <p>NRP: 5116100151</p>
+            <p class="title-porto">NRP: 5116100151</p>
+            <p>Front-end</p>
             <div style="margin: 24px 0;">
-              <a href="#"><i class="fa fa-dribbble"></i></a> 
-              <a href="#"><i class="fa fa-twitter"></i></a>  
-              <a href="#"><i class="fa fa-linkedin"></i></a>  
-              <a href="#"><i class="fa fa-facebook"></i></a> 
+              <a class="a-proto" href="#"><i class="fa fa-dribbble"></i></a> 
+              <a class="a-proto" href="#"><i class="fa fa-twitter"></i></a>  
+              <a class="a-proto" href="#"><i class="fa fa-linkedin"></i></a>  
+              <a class="a-proto" href="#"><i class="fa fa-facebook"></i></a> 
             </div>
-             <div class="card">
-            <img src="/#" alt="Nabil" style="width:100%">
+             <div class="card-porto">
+            <img src="/#" alt="Nabil" style="width:50%">
             <h1>Nabil H</h1>
-            <p class="title">Back-end</p>
-            <p>NRP: 5116100 </p>
+            <p class="title-poto">NRP: 5116100 </p>
+            <p>Back-end</p>
             <div style="margin: 24px 0;">
-              <a href="#"><i class="fa fa-dribbble"></i></a> 
-              <a href="#"><i class="fa fa-twitter"></i></a>  
-              <a href="#"><i class="fa fa-linkedin"></i></a>  
-              <a href="#"><i class="fa fa-facebook"></i></a> 
+              <a class="a-proto" href="#"><i class="fa fa-dribbble"></i></a> 
+              <a class="a-proto" href="#"><i class="fa fa-twitter"></i></a>  
+              <a class="a-proto" href="#"><i class="fa fa-linkedin"></i></a>  
+              <a class="a-proto" href="#"><i class="fa fa-facebook"></i></a> 
             </div>
-             <div class="card">
-            <img src="/#" alt="Glenn" style="width:100%">
+             <div class="card-porto">
+            <img src="/#" alt="Glenn" style="width:50%">
             <h1>Glenn</h1>
-            <p class="title">Back-end</p>
-            <p>NRP: 5115100</p>
+            <p class="title-porto">NRP: 5115100</p>
+            <p>Back-end</p>
             <div style="margin: 24px 0;">
-              <a href="#"><i class="fa fa-dribbble"></i></a> 
-              <a href="#"><i class="fa fa-twitter"></i></a>  
-              <a href="#"><i class="fa fa-linkedin"></i></a>  
-              <a href="#"><i class="fa fa-facebook"></i></a> 
+              <a class="a-proto" href="#"><i class="fa fa-dribbble"></i></a> 
+              <a class="a-proto" href="#"><i class="fa fa-twitter"></i></a>  
+              <a class="a-proto" href="#"><i class="fa fa-linkedin"></i></a>  
+              <a class="a-proto" href="#"><i class="fa fa-facebook"></i></a> 
             </div>
 @endsection
