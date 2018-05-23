@@ -37,7 +37,7 @@
           <br>
           <div class="card-porto">
             <img src="/#" alt="Falah" style="width:50%">
-            <h1>Falah Ath Thaariq Razzaq</h1>
+            <h1>Falah Ath Razzaq</h1>
             <p class="title-porto">NRP: 5116100151</p>
             <p>Front-end</p>
             <div style="margin: 24px 0;">
@@ -46,10 +46,11 @@
               <a class="a-proto" href="#"><i class="fa fa-linkedin"></i></a>  
               <a class="a-proto" href="#"><i class="fa fa-facebook"></i></a> 
             </div>
-             <div class="card-porto">
+          </div>
+          <div class="card-porto">
             <img src="/#" alt="Nabil" style="width:50%">
-            <h1>Nabil H</h1>
-            <p class="title-poto">NRP: 5116100 </p>
+            <h1>Nabil Haidar Rahman</h1>
+            <p class="title-poto">NRP: 5116100???</p>
             <p>Back-end</p>
             <div style="margin: 24px 0;">
               <a class="a-proto" href="#"><i class="fa fa-dribbble"></i></a> 
@@ -57,10 +58,11 @@
               <a class="a-proto" href="#"><i class="fa fa-linkedin"></i></a>  
               <a class="a-proto" href="#"><i class="fa fa-facebook"></i></a> 
             </div>
-             <div class="card-porto">
+          </div>
+          <div class="card-porto">
             <img src="/#" alt="Glenn" style="width:50%">
             <h1>Glenn</h1>
-            <p class="title-porto">NRP: 5115100</p>
+            <p class="title-porto">NRP: 5115100???</p>
             <p>Back-end</p>
             <div style="margin: 24px 0;">
               <a class="a-proto" href="#"><i class="fa fa-dribbble"></i></a> 
@@ -68,4 +70,5 @@
               <a class="a-proto" href="#"><i class="fa fa-linkedin"></i></a>  
               <a class="a-proto" href="#"><i class="fa fa-facebook"></i></a> 
             </div>
+          </div>
 @endsection

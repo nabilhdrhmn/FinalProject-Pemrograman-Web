@@ -354,6 +354,24 @@ template {
   display: none;
 }
 
+.card-porto {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 80px 80px;
+  text-align: center;
+}
+
+.title-porto {
+  color: grey;
+  font-size: 18px;
+}
+
+.a-porto {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
 [hidden] {
   display: none !important;
 }
@@ -8977,22 +8995,4 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important;
   }
-
-.card-porto {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: 80px 80px;
-  text-align: center;
-}
-
-.title-porto {
-  color: grey;
-  font-size: 18px;
-}
-
-.a-porto {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
 /*# sourceMappingURL=bootstrap.css.map */
