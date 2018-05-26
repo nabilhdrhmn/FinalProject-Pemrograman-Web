@@ -37,7 +37,7 @@
           <br>
           <div class="card-porto">
             <img src="/#" alt="Falah" style="width:50%">
-            <h1>Falah Ath Razzaq</h1>
+            <h1>Falah Razzaq</h1>
             <p class="title-porto">NRP: 5116100151</p>
             <p>Front-end</p>
             <div style="margin: 24px 0;">
@@ -49,7 +49,7 @@
           </div>
           <div class="card-porto">
             <img src="/#" alt="Nabil" style="width:50%">
-            <h1>Nabil Haidar Rahman</h1>
+            <h1>Nabil Haidar R</h1>
             <p class="title-poto">NRP: 5116100???</p>
             <p>Back-end</p>
             <div style="margin: 24px 0;">
