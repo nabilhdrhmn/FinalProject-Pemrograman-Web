@@ -11,17 +11,36 @@
 |
 */
 
-
 Route::get('/', function () {
-	return view('Index');
+    return view('index');
 });
 
-Route::get('/about', function () {
-	return view('about');
+// Route::get('/login-admin', function () {
+//     return view('login');
+// });
+
+Route::get('/category', function () {
+    return view('category');
 });
 
+Route::get('/wilayah', function () {
+    return view('wilayah');
+});
 
+// Route::get('/index-admin', function () {
+//     return view('admin_index');
+// });
 
+// Route::get('/tambahdata-admin', function () {
+//     return view('admin_tambahdata');
+// });
+	
+// Route::get('/ubahpassword-admin', function () {
+//     return view('admin_ubahpassword');
+// });
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index');
+Route::get('/tambahdata-admin', 'HomeController@tambah_sekolah');
+Route::get('/admin_ubahpassword', 'HomeController@ganti_pass');
+
