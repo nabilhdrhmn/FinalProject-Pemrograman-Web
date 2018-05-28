@@ -23,17 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('admin_index');
+        return view('dashboard');
     }
 
-    public function tambah_sekolah()
+    public function tambahdata()
     {
-        return view('admin_tambahdata');   
-    }
-
-    public function ganti_pass()
-    {
-        return view('admin_ubahpassword');   
+        return view('admins.tambahdata');
     }
 
 

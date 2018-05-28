@@ -12,35 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
-
-// Route::get('/login-admin', function () {
-//     return view('login');
-// });
 
 Route::get('/category', function () {
-    return view('category');
+    return view('kategori');
 });
 
-Route::get('/wilayah', function () {
-    return view('wilayah');
-});
 
-// Route::get('/index-admin', function () {
-//     return view('admin_index');
-// });
-
-// Route::get('/tambahdata-admin', function () {
-//     return view('admin_tambahdata');
-// });
-	
-// Route::get('/ubahpassword-admin', function () {
-//     return view('admin_ubahpassword');
-// });
 Auth::routes();
 
-Route::get('/admin', 'HomeController@index');
-Route::get('/tambahdata-admin', 'HomeController@tambah_sekolah');
-Route::get('/admin_ubahpassword', 'HomeController@ganti_pass');
+//BAWAH ROUTE DENGAN KONTROLLER//
 
+
+Route::get('/wilayah/{berak}', 'PagesController@kota');
+
+Route::get('/dashboard', 'HomeController@index');
+Route::get('/tambahdata', 'HomeController@tambahdata');

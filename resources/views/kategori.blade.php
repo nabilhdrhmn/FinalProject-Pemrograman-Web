@@ -1,4 +1,4 @@
-@extends('home_layouts.layouts')
+@extends('layouts.app')
 
 @section('content')
     <br><br><br>
@@ -27,7 +27,7 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="{{url('/wilayah/3')}}">
+            <a class="portfolio-item d-block mx-auto" href="{{url('/wilayah/2')}}">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
 
@@ -35,7 +35,7 @@
               </div>
               <a href="{{url('/wilayah/3')}}">
               <img class="img-fluid" src="{{url('/home/img/surabaya.jpg')}}" alt=""></a>
-            </a>
+              </a>
           </div>
         </div>
       </div>

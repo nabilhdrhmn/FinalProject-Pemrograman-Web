@@ -1,21 +1,41 @@
-hahaahahahasdoifnds hfioedh egein jjpoj 
+@extends('layouts.admin')
 
-{{-- @extends('admin_layouts.layouts')
+{{-- @section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Dashboard</div>
 
-@section('contents')
+                <div class="panel-body">
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-                                    <form action="{{ route('logout') }}" method="POST">
-                                        @csrf
-                                        <h1>asdassadasdasd</h1>
-                                        <input type="submit" name="logout" value="LOGIIIIUUT">
-                                    </form>
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection --}}
+
+
+@section('content')
+
   <div class="content-wrapper">
     <div class="container-fluid">
-      <!-- Example DataTables Card-->
+{{-- <form action="{{ route('logout') }}" method="POST">
+                {{ csrf_field() }}
+ --}}      <!-- Example DataTables Card-->
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-table"></i>sadasasadsadsdas Sekolah</div>
-        <div class="card-body">
+          <i class="fa fa-table fa-fw"></i>List Sekolah {{-- <button class="btn btn-sm btn-secondary" type="submit" style="float: right;">Logout</button> --}}</div>
+              
+{{--             </form>
+ --}}        <div class="card-body">
           <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
@@ -48,6 +68,7 @@ hahaahahahasdoifnds hfioedh egein jjpoj
                   <td>
                       <a class="btn btn-primary btn-sm" style="color: white;" data-toggle="modal" data-target="#editModal">Edit</a>
                       <a class="btn btn-danger btn-sm" style="color: white;">Hapus</a>
+
                   </td>
                 </tr>
                 <tr>
@@ -491,7 +512,12 @@ hahaahahahasdoifnds hfioedh egein jjpoj
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <form action="{{ route('logout') }}" method="POST">
+                {{ csrf_field() }}
+
+            <button class="btn btn-warning" type="submit">Logout</button>
+            {{-- <a class="btn btn-primary" href="login.html">Logout</a> --}}
+            </form>
           </div>
         </div>
       </div>
@@ -530,4 +556,4 @@ hahaahahahasdoifnds hfioedh egein jjpoj
     </div>
   </div>
 </div>
-@endsection --}}
+@endsection
