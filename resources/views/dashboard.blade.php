@@ -52,7 +52,6 @@
               </thead>
               <tfoot>
                 <tr>
-                  <th>User ID</th>
                   <th>Nama Sekolah</th>
                   <th>Alamat</th>
                   <th>Wilayah</th>
@@ -74,8 +73,15 @@
                   <td>{{$sekolah->website}}</td>
                   <td>
                       <button class="btn btn-primary btn-sm" style="color: white;" data-toggle="modal" data-target="#editModal">Edit</button>
-                      <form action="{{url('delete')}}" method=""></form>
-                      <button class="btn btn-danger btn-sm" style="color: white;" type="submit">Hapus</button>
+{{--                       <form action="{{action('SekolahController@destroy', $sekolah->id)}}" method="post">{{csrf_field()}}
+                        <button class="btn btn-danger btn-sm" style="color: white;" type="submit">Hapus</button>
+                      </form>
+ --}}             
+                    <form action="/delete/{{$sekolah->id}}" method="POST">
+                          {{ csrf_field() }}
+                        <button class="btn btn-danger btn-sm" style="color: white;" type="submit">Hapus</button>      
+                    </form>     
+
                   </td>
                 </tr>
                 @endforeach

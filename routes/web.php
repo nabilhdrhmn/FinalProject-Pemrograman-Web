@@ -32,4 +32,4 @@ Route::get('/tambahdata', 'HomeController@tambahdata');
 Route::get('gantipass', 'HomeController@gantipass');
 
 Route::post('/tambahdata', 'SekolahController@tambah');
-Route::delete('/delete', 'SekolahController@destroy');
+Route::post('/delete/{id}', 'SekolahController@destroy');

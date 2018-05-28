@@ -17,7 +17,7 @@ class SekolahController extends Controller
     public function index()
     {
         //
-        $data['school'] = Sekolah::where('user_id', auth()->user()->id)->get();
+        $data['school'] = Sekolah::all();
 
         return view('dashboard', $data);
 
@@ -43,8 +43,6 @@ class SekolahController extends Controller
     {
         $sekolah= new Sekolah();
 
-        $sekolah->user_id = $request->user_id;
-
         $sekolah->nama_sekolah = $request->nama_sekolah;
 
         $sekolah->alamat = $request->alamat;
@@ -59,7 +57,7 @@ class SekolahController extends Controller
 
         $sekolah->save();
 
-        return view('/dashboard');
+        return view('dashboard');
     }
 
     /**
@@ -104,10 +102,11 @@ class SekolahController extends Controller
      */
     public function destroy($id)
     {
-        //
-        $sekolah = Sekolah::find($id);
-        $sekolah->delete();
+        
+         $sekolah = Sekolah::find($id);
+         $sekolah->delete();
 
-        return view('/dashboard');
+        //return view('dashboard');
+         return redirect()->back();
     }
 }
