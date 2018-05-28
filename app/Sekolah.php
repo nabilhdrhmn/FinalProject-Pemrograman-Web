@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Sekolah extends Model
 {
     //
+    
 }

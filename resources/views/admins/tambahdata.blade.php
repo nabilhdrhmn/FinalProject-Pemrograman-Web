@@ -9,6 +9,10 @@
       <div class="card-body">
         <form method="POST" action="{{url('/tambahdata')}}"> {{ csrf_field()}}
           <div class="form-group">
+            <label for="user_id">User ID</label>
+            <input class="form-control" id="user_id" name="user_id" type="text" aria-describedby="emailHelp" placeholder="password" value="{{old('user_id')}}">
+          </div>
+          <div class="form-group">
             <label for="nama_sekolah">Nama Sekolah</label>
             <input class="form-control" id="nama_sekolah" name="nama_sekolah" type="text"  placeholder="password" value="{{old('nama_sekolah')}}">
           </div>
@@ -19,6 +23,10 @@
           <div class="form-group">
             <label for="wilayah">Wilayah</label>
             <input class="form-control" id="wilayah" name="wilayah" type="text" aria-describedby="emailHelp" placeholder="password" value="{{old('wilayah')}}">
+          </div>
+          <div class="form-group">
+            <label for="website">Website</label>
+            <input class="form-control" id="website" name="website" type="text" aria-describedby="emailHelp" placeholder="password" value="{{old('website')}}">
           </div>
           <div class="form-group">
             <label for="deskripsi">Deskripsi</label>

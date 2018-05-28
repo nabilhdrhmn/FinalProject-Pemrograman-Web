@@ -40,45 +40,40 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
                 <tr>
-                  <th>User ID</th>
                   <th>Nama Sekolah</th>
+                  <th>Lokasi</th>
                   <th>Alamat</th>
                   <th>Wilayah</th>
                   <th>Deskripsi</th>
                   <th>Foto</th>
-                  <th>Website</th>
                   <th colspan="2">Action</th>
                 </tr>
               </thead>
               <tfoot>
                 <tr>
-                  <th>User ID</th>
                   <th>Nama Sekolah</th>
+                  <th>Lokasi</th>
                   <th>Alamat</th>
-                  <th>Wilayah</th>
-                  <th>Deskripsi</th>
+                  <th>Keunggulan</th>
+                  <th>Fasilitas</th>
                   <th>Foto</th>
-                  <th>Website</th>
-                  <th colspan="2">Action</th>
+                  <th>Action</th>
                 </tr>
               </tfoot>
               <tbody>
-                @foreach($school as $sekolah)
                 <tr>
-                  <td>{{$sekolah->id}}</td>
-                  <td>{{$sekolah->nama_sekolah}}</td>
-                  <td>{{$sekolah->wilayah}}</td>
-                  <td>{{$sekolah->alamat}}</td>
-                  <td>{{$sekolah->deskripsi}}</td>
-                  <td>{{$sekolah->image}}</td>
-                  <td>{{$sekolah->website}}</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                   <td>
                       <button class="btn btn-primary btn-sm" style="color: white;" data-toggle="modal" data-target="#editModal">Edit</button>
                       <form action="{{url('delete')}}" method=""></form>
                       <button class="btn btn-danger btn-sm" style="color: white;" type="submit">Hapus</button>
                   </td>
                 </tr>
-                @endforeach
               </tbody>
             </table>
           </div>

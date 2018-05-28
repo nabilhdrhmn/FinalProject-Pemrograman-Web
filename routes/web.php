@@ -27,8 +27,9 @@ Auth::routes();
 
 Route::get('/wilayah/{berak}', 'PagesController@kota');
 
-Route::get('/dashboard', 'HomeController@index');
+Route::get('/dashboard', 'SekolahController@index');
 Route::get('/tambahdata', 'HomeController@tambahdata');
 Route::get('gantipass', 'HomeController@gantipass');
 
 Route::post('/tambahdata', 'SekolahController@tambah');
+Route::delete('/delete', 'SekolahController@destroy');
