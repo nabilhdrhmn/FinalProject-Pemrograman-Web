@@ -53,11 +53,15 @@ class SekolahController extends Controller
 
         $sekolah->deskripsi = $request->deskripsi;
 
-        $sekolah->image = $request->image;
+        $file = $request->file('image');
+        $fileName= $file->getClientOriginalName();
+        $request->file('image')->move('image/', $fileName);
+
+        $sekolah->image = $fileName;
 
         $sekolah->save();
 
-        return view('dashboard');
+        return redirect()->back();
     }
 
     /**

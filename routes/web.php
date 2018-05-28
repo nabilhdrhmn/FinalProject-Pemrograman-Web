@@ -25,7 +25,7 @@ Auth::routes();
 //BAWAH ROUTE DENGAN KONTROLLER//
 
 
-Route::get('/wilayah/{berak}', 'PagesController@kota');
+Route::get('/wilayah/{wilayah}', 'PagesController@kota');
 
 Route::get('/dashboard', 'SekolahController@index');
 

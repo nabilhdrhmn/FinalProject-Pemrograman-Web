@@ -26,8 +26,7 @@
           </div>
           <div class="form-group">
             <label for="deskripsi">Deskripsi</label>
-            <textarea class="form-control" rows="5" id="deskripsi" placeholder="deskripsi" type="text" value="{{old('deskripsi')}}" name="deskripsi">
-            </textarea>
+            <textarea class="form-control" rows="5" id="deskripsi" placeholder="deskripsi" type="text" value="{{old('deskripsi')}}" name="deskripsi"></textarea>
           </div>
           <div class="form-group">    
             <label for="imageInput">File input</label>
