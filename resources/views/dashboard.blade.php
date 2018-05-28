@@ -44,7 +44,7 @@
                   <th>Lokasi</th>
                   <th>Alamat</th>
                   <th>Wilayah</th>
-                  <th>Dibuat pada</th>
+                  <th>Deskripsi</th>
                   <th>Action</th>
                 </tr>
               </thead>
