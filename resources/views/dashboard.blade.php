@@ -43,8 +43,8 @@
                   <th>Nama Sekolah</th>
                   <th>Lokasi</th>
                   <th>Alamat</th>
-                  <th>Keunggulan</th>
-                  <th>Fasilitas</th>
+                  <th>Wilayah</th>
+                  <th>Dibuat pada</th>
                   <th>Action</th>
                 </tr>
               </thead>

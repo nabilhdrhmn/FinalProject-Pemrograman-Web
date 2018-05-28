@@ -20,6 +20,11 @@
             <label for="exampleInputEmail1">Wilayah</label>
             <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="password">
           </div>
+          <div class="form-group">
+            <label for="comment">Deskripsi</label>
+            <textarea class="form-control" rows="5" id="comment" placeholder="deskripsi" type="text" placeholder="deskripsi">
+            </textarea>
+          </div>
           <a class="btn btn-primary btn-block" href="index.html">Tambah Sekolah</a>
         </form>
       </div>
