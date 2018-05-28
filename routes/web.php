@@ -29,3 +29,4 @@ Route::get('/wilayah/{berak}', 'PagesController@kota');
 
 Route::get('/dashboard', 'HomeController@index');
 Route::get('/tambahdata', 'HomeController@tambahdata');
+Route::get('gantipass', 'HomeController@gantipass');

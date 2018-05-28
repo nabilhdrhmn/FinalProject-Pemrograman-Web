@@ -31,5 +31,9 @@ class HomeController extends Controller
         return view('admins.tambahdata');
     }
 
+    public function gantipass()
+    {
+        return view('admins.ubahpass');
+    }
 
 }

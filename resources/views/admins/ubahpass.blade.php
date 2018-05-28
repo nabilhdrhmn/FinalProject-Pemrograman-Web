@@ -1,26 +1,22 @@
 @extends('layouts.admin')
 
 @section('content')
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <div class="container-fluid">
 
     <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Tambah Data Sekolah</div>
+      <div class="card-header">Login</div>
       <div class="card-body">
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Nama Sekolah</label>
-            <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="password">
+            <label for="exampleInputEmail1">Password Baru</label>
+            <input class="form-control" id="exampleInputEmail1" type="password" aria-describedby="emailHelp" placeholder="password">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Alamat</label>
-            <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="password">
+            <label for="exampleInputPassword1">Configurasi Password</label>
+            <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
           </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Wilayah</label>
-            <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="password">
-          </div>
-          <a class="btn btn-primary btn-block" href="index.html">Tambah Sekolah</a>
+          <a class="btn btn-primary btn-block" href="index.html">Login</a>
         </form>
       </div>
     </div>
