@@ -7,25 +7,25 @@
     <div class="card card-login mx-auto mt-5">
       <div class="card-header">Tambah Data Sekolah</div>
       <div class="card-body">
-        <form>
+        <form method="POST" action="{{url('/tambahdata')}}"> {{ csrf_field()}}
           <div class="form-group">
-            <label for="exampleInputEmail1">Nama Sekolah</label>
-            <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="password">
+            <label for="nama_sekolah">Nama Sekolah</label>
+            <input class="form-control" id="nama_sekolah" type="text" aria-describedby="emailHelp" placeholder="password">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Alamat</label>
-            <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="password">
+            <label for="alamat">Alamat</label>
+            <input class="form-control" id="alamat" type="text" aria-describedby="emailHelp" placeholder="password">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Wilayah</label>
-            <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="password">
+            <label for="wilayah">Wilayah</label>
+            <input class="form-control" id="wilayah" type="text" aria-describedby="emailHelp" placeholder="password">
           </div>
           <div class="form-group">
-            <label for="comment">Deskripsi</label>
-            <textarea class="form-control" rows="5" id="comment" placeholder="deskripsi" type="text" placeholder="deskripsi">
+            <label for="deskripsi">Deskripsi</label>
+            <textarea class="form-control" rows="5" id="deskripsi" placeholder="deskripsi" type="text" placeholder="deskripsi">
             </textarea>
           </div>
-          <a class="btn btn-primary btn-block" href="index.html">Tambah Sekolah</a>
+          <button class="btn btn-primary btn-block" type="submit">Tambah Sekolah</button>
         </form>
       </div>
     </div>

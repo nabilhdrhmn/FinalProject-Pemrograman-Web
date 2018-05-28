@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Sekolah;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class SekolahController extends Controller
 {
@@ -11,6 +13,7 @@ class SekolahController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         //
@@ -32,9 +35,21 @@ class SekolahController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function tambah(Request $request)
     {
-        //
+        $sekolah= new Sekolah;
+
+        $sekolah->nama_sekolah = $request->nama_sekolah;
+
+        $sekolah->alamat = $request->alamat;
+
+        $sekolah->wilayah = $request->wilayah;
+
+        $sekolah->deskripsi = $request->deskripsi;
+
+        $sekolah->save();
+
+        return view('/dashboard');
     }
 
     /**
