@@ -79,7 +79,9 @@ class SekolahController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Sekolah::find($id);
+        return view('admins.edit',['data' => $data]);
+
     }
 
     /**
@@ -91,7 +93,20 @@ class SekolahController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //echo $id;
+        $data = array(
+            'nama_sekolah' => $request->input('nama_sekolah'),
+            'alamat' => $request->input('alamat'),
+            'wilayah' => $request->input('wilayah'),
+            'deskripsi' => $request->input('deskripsi'),
+            'website' => $request->input('website')
+        );
+
+        
+        //dd($data);
+        Sekolah::find($id)->update($data);
+
+        return redirect()->back();
     }
 
     /**

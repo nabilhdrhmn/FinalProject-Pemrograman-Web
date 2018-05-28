@@ -40,7 +40,6 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
                 <tr>
-                  <th>User ID</th>
                   <th>Nama Sekolah</th>
                   <th>Alamat</th>
                   <th>Wilayah</th>
@@ -64,7 +63,6 @@
               <tbody>
                 @foreach($school as $sekolah)
                 <tr>
-                  <td>{{$sekolah->id}}</td>
                   <td>{{$sekolah->nama_sekolah}}</td>
                   <td>{{$sekolah->wilayah}}</td>
                   <td>{{$sekolah->alamat}}</td>
@@ -72,7 +70,7 @@
                   <td>{{$sekolah->image}}</td>
                   <td>{{$sekolah->website}}</td>
                   <td>
-                      <button class="btn btn-primary btn-sm" style="color: white;" data-toggle="modal" data-target="#editModal">Edit</button>
+                      <a href="/edit/{{$sekolah->id}}"><button class="btn btn-primary btn-sm" style="color: white;">Edit</button></a>
 {{--                       <form action="{{action('SekolahController@destroy', $sekolah->id)}}" method="post">{{csrf_field()}}
                         <button class="btn btn-danger btn-sm" style="color: white;" type="submit">Hapus</button>
                       </form>
@@ -130,7 +128,7 @@
     </div>
 
     <!-- Detil Sekolah Modal -->
-    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    {{-- <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -142,11 +140,23 @@
       <div class="modal-body">
          <form action="/action_page.php">
             <div class="form-group">
-              <label for="email">Email address:</label>
-              <input type="email" class="form-control" id="email">
+              <label for="email">Nama Sekolah:</label>
+              <input type="email" class="form-control" id="email" value="">
             </div>
             <div class="form-group">
-              <label for="pwd">Password:</label>
+              <label for="pwd">Alamat</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Wilayah</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Website</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Alamat</label>
               <input type="password" class="form-control" id="pwd">
             </div>
             <div class="checkbox">
@@ -159,7 +169,7 @@
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
-    </div>
+    </div> --}}
   </div>
 </div>
 @endsection
