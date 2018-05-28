@@ -47,6 +47,8 @@ class SekolahController extends Controller
 
         $sekolah->deskripsi = $request->deskripsi;
 
+        $sekolah->image = $request->image;
+        
         $sekolah->save();
 
         return view('/dashboard');

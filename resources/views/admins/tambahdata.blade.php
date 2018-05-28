@@ -25,9 +25,9 @@
             <textarea class="form-control" rows="5" id="deskripsi" placeholder="deskripsi" type="text" value="{{old('deskripsi')}}" name="deskripsi">
             </textarea>
           </div>
-          <div class="form-group">
+          <div class="form-group">    
             <label for="imageInput">File input</label>
-            <input data-preview="#preview" name="input_img" type="file" id="imageInput">
+            <input data-preview="#preview" name="image" type="file" id="imageInput" value="{{old('image')}}">
             <img class="col-sm-6" id="preview"  src="" ></img>
             <p class="help-block">Example block-level help text here.</p>
         </div>
@@ -40,7 +40,7 @@
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
-      <div class="container">
+      <div class="container">   
         <div class="text-center">
           <small>Copyright © Your Website 2018</small>
         </div>

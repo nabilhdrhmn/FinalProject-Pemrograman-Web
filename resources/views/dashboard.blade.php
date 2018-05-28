@@ -45,6 +45,7 @@
                   <th>Alamat</th>
                   <th>Wilayah</th>
                   <th>Deskripsi</th>
+                  <th>Foto</th>
                   <th>Action</th>
                 </tr>
               </thead>
