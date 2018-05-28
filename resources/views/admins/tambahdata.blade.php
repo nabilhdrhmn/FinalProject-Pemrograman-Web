@@ -10,19 +10,19 @@
         <form method="POST" action="{{url('/tambahdata')}}"> {{ csrf_field()}}
           <div class="form-group">
             <label for="nama_sekolah">Nama Sekolah</label>
-            <input class="form-control" id="nama_sekolah" type="text" aria-describedby="emailHelp" placeholder="password">
+            <input class="form-control" id="nama_sekolah" name="nama_sekolah" type="text"  placeholder="password" value="{{old('nama_sekolah')}}">
           </div>
           <div class="form-group">
             <label for="alamat">Alamat</label>
-            <input class="form-control" id="alamat" type="text" aria-describedby="emailHelp" placeholder="password">
+            <input class="form-control" name="alamat" id="alamat" type="text" aria-describedby="emailHelp" placeholder="password" value="{{ old('alamat')}}">
           </div>
           <div class="form-group">
             <label for="wilayah">Wilayah</label>
-            <input class="form-control" id="wilayah" type="text" aria-describedby="emailHelp" placeholder="password">
+            <input class="form-control" id="wilayah" name="wilayah" type="text" aria-describedby="emailHelp" placeholder="password" value="{{old('wilayah')}}">
           </div>
           <div class="form-group">
             <label for="deskripsi">Deskripsi</label>
-            <textarea class="form-control" rows="5" id="deskripsi" placeholder="deskripsi" type="text" placeholder="deskripsi">
+            <textarea class="form-control" rows="5" id="deskripsi" placeholder="deskripsi" type="text" value="{{old('deskripsi')}}" name="deskripsi">
             </textarea>
           </div>
           <button class="btn btn-primary btn-block" type="submit">Tambah Sekolah</button>
