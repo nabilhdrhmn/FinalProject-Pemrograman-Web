@@ -7,10 +7,7 @@
 
       <!-- Page Heading -->
       <h1 class="my-4">
-        @foreach($data as $skul)
-        <small>Wilayah {{$skul->wilayah}} :</small>
-        @endforeach
-        @php unset($skul); @endphp
+        <small>Wilayah {{$lokasi}} :</small>
       </h1>
 
       <div class="row">
@@ -26,16 +23,18 @@
             </div>
             <hr>
             <div align="center">
-              <a class="btn btn-primary btn-md" href="">Lihat Detil</a>
+              <a class="btn btn-primary btn-md" data-toggle="modal"
+              data-target="#modal{{$data->id}}">Lihat Detil</a>
               <br><br>
             </div>
           </div>
         </div>
-        @endforeach
+  
       <!-- /.row -->
       <br><br>
       <!-- Pagination -->
-      <ul class="pagination justify-content-center">
+    </div>
+    <ul class="pagination justify-content-center">
         <li class="page-item">
           <a class="page-link" href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
@@ -59,45 +58,25 @@
         </li>
       </ul>
 
-    </div>
-
-    <div class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small>Final Project Pemrograman Web</small>
-      </div>
-    </div>
-
     <!-- Detil Sekolah Modal -->
-    <div class="modal fade" id="detilsekolah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal{{$data->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Detil {{$data->nama_sekolah}}</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-         <form action="/action_page.php">
-            <div class="form-group">
-              <label for="email">Email address:</label>
-              <input type="email" class="form-control" id="email">
-            </div>
-            <div class="form-group">
-              <label for="pwd">Password:</label>
-              <input type="password" class="form-control" id="pwd">
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox"> Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form> 
+        <img src="/image/{{$data->image}}" class="foto_profile" alt="Foto Profil" width="100%" height="auto">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Alamat :</b> {{ $data->alamat}}</li>
+          <li class="list-group-item"><b>Deskripsi :</b> {{ $data->deskripsi}}</li>
+          <li class="list-group-item"><b>Website :</b><a href="http://{{$data->website}}">{{ $data->website}}</a></li>
+        </ul>
       </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      @endforeach
     </div>
   </div>
 </div>
@@ -107,4 +86,6 @@
         <i class="fa fa-chevron-up"></i>
       </a>
     </div>
+
+
 @endsection

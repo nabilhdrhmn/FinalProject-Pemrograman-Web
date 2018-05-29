@@ -14,6 +14,7 @@
               </div>
               <a href="{{url('/wilayah/1')}}">
               <img class="img-fluid" src="{{url('/home/img/jakarta.jpg')}}" alt=""></a>
+              <h3 style="text-align: center;">Jakarta</h3>
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -24,6 +25,7 @@
               </div>
               <a href="{{url('/wilayah/2')}}">
               <img class="img-fluid" src="{{url('/home/img/bandung.jpg')}}" alt=""></a>
+              <h3 style="text-align: center;">Bandung</h3>
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -35,6 +37,7 @@
               </div>
               <a href="{{url('/wilayah/3')}}">
               <img class="img-fluid" src="{{url('/home/img/surabaya.jpg')}}" alt=""></a>
+              <h3 style="text-align: center;">Surabaya</h3>
               </a>
           </div>
         </div>

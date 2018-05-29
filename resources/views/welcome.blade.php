@@ -42,7 +42,7 @@
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-
+                Nabil Haidarrahman Pribadi
                 </div>
               </div>
               <img class="img-fluid" src="{{url('/home/img/kupon.jpg')}}" alt="">
@@ -52,7 +52,7 @@
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-
+                Falah Ath Thariq Razzaq
                 </div>
               </div>
               <img class="img-fluid" src="{{url('/home/img/falah.jpg')}}" alt="">
@@ -62,7 +62,7 @@
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-
+                Glenn Lucas Harryara
                 </div>
               </div>
               <img class="img-fluid" src="{{url('/home/img/glenn.jpg')}}" alt="">
@@ -79,16 +79,10 @@
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead">Freelancer is a free bootstrap theme created
- by Start Bootstrap. The download includes the complete source files 
-including HTML, CSS, and JavaScript as well as optional LESS stylesheets
- for easy customization.</p>
+            <p class="lead">SiapSekolah membantu teman-teman yang sedang kebingungan dengan sekolah-sekolah yang ada di Indonesia.</p>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="lead">Whether you're a student looking to showcase
- your work, a professional looking to attract clients, or a graphic 
-artist looking to share your projects, this template is the perfect 
-starting point!</p>
+            <p class="lead">SiapSekolah baru menyediakan sekolah-sekolah yang ada di tiga kota besar di Indonesia! Kami akan terus mengupdate info-info sekolah.</p>
           </div>
         </div>
       </div>
@@ -101,11 +95,10 @@ starting point!</p>
         <div class="row">
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">2215 John Daniel Drive
-              <br>Clark, MO 65243</p>
+            <p class="lead mb-0">Jalan Raya ITS, Keputih, Sukolilo, Kota SBY, Jawa Timur 60111</p>
           </div>
           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <h4 class="text-uppercase mb-4">Feel free to contact us!</h4>
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
@@ -135,9 +128,8 @@ starting point!</p>
             </ul>
           </div>
           <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
-            <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-              <a href="http://startbootstrap.com/">Start Bootstrap</a>.</p>
+            <h4 class="text-uppercase mb-4">SiapSekolah!</h4>
+            <p class="lead mb-0">Ada untuk Indonesia.</p>
           </div>
         </div>
       </div>

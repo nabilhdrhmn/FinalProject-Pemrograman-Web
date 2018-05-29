@@ -14,18 +14,23 @@ class PagesController extends Controller
     	if($wilayah == 1)
     	{
             $data = Sekolah::all()->where('wilayah','Jakarta');
+            $lokasi = 'Jakarta';
             //dd($data);
     		// return view('kota.kota', $data);
-            return view('kota.kota', ['data' => $data]);
+            return view('kota.kota')->with('data',$data)->with('lokasi', $lokasi);
     	}
-    	elseif($berak == 2) {
+    	elseif($wilayah == 2) {
     		$data = Sekolah::all()->where('wilayah','Bandung');
-    	    return view('kota.kota', $data);	
+            //dd($data);
+            $lokasi = 'Bandung';
+    	    return view('kota.kota')->with('data',$data)->with('lokasi', $lokasi);	
     		# code...
     	}
-    	elseif($berak == 3) {
+    	elseif($wilayah == 3) {
     		$data = Sekolah::all()->where('wilayah','Surabaya');
-    		return view('kota.kota', $data);
+            // dd($data);
+            $lokasi = 'Surabaya';
+    		return view('kota.kota')->with('data',$data)->with('lokasi', $lokasi);
     		# code...
     	}
     }
