@@ -53,12 +53,12 @@ class SekolahController extends Controller
 
         $sekolah->deskripsi = $request->deskripsi;
 
-        $file = $request['image'];
-        $fileName = $request['image']->getClientOriginalName();
+        $file = $request->file('image');
+        $fileName = time().'.'.$file->getClientOriginalExtension();
         $destination = public_path('/image');
         $file->move($destination, $fileName);
 
-        $sekolah->image = $file;
+        $sekolah->image = $fileName;
 
         $sekolah->save();
 

@@ -10,14 +10,14 @@
         @foreach($data as $skul)
         <small>Wilayah {{$skul->wilayah}} :</small>
         @endforeach
+        @php unset($skul); @endphp
       </h1>
-      @php unset($skul); @endphp
 
       <div class="row">
         @foreach($data as $data)
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href=""><img class="card-img-top" src="{{--  {{url({{$sekolah->image}})}} --}}" alt=""></a>
+            <a href=""><img class="card-img-top" src="/image/{{$data->image}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="">{{$data->nama_sekolah}}</a>
