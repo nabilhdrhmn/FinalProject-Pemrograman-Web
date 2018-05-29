@@ -19,6 +19,9 @@ class CreateSekolahsTable extends Migration
             $table->string('alamat');
             $table->string('wilayah');
             $table->text('deskripsi');
+            $table->string('website');
+            $table->string('image');
+
             $table->timestamps();
         });
     }

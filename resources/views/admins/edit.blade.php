@@ -1,40 +1,35 @@
 @extends('layouts.admin')
 
 @section('content')
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <div class="container-fluid">
 
     <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Tambah Data Sekolah</div>
+      <div class="card-header">Edit Data Sekolah</div>
       <div class="card-body">
-        <form method="POST" action="{{url('/tambahdata')}}" enctype="multipart/form-data"> {{ csrf_field()}}
+        <form method="POST" action="/updatedata/{{ $data->id }}"> {{ csrf_field()}}
           <div class="form-group">
             <label for="nama_sekolah">Nama Sekolah</label>
-            <input class="form-control" id="nama_sekolah" name="nama_sekolah" type="text"  placeholder="password" value="{{old('nama_sekolah')}}">
+            <input class="form-control" id="nama_sekolah" name="nama_sekolah" type="text"  placeholder="password" value="{{ $data->nama_sekolah }}">
           </div>
           <div class="form-group">
             <label for="alamat">Alamat</label>
-            <input class="form-control" name="alamat" id="alamat" type="text" aria-describedby="emailHelp" placeholder="password" value="{{ old('alamat')}}">
+            <input class="form-control" name="alamat" id="alamat" type="text" aria-describedby="emailHelp" placeholder="password" value="{{$data->alamat }}">
           </div>
           <div class="form-group">
             <label for="wilayah">Wilayah</label>
-            <input class="form-control" id="wilayah" name="wilayah" type="text" aria-describedby="emailHelp" placeholder="password" value="{{old('wilayah')}}">
+            <input class="form-control" id="wilayah" name="wilayah" type="text" aria-describedby="emailHelp" placeholder="password" value="{{$data->wilayah }}">
           </div>
           <div class="form-group">
             <label for="website">Website</label>
-            <input class="form-control" id="website" name="website" type="text" aria-describedby="emailHelp" placeholder="password" value="{{old('website')}}">
+            <input class="form-control" id="website" name="website" type="text" aria-describedby="emailHelp" placeholder="password" value="{{$data->website }}">
           </div>
           <div class="form-group">
             <label for="deskripsi">Deskripsi</label>
-            <textarea class="form-control" rows="5" id="deskripsi" placeholder="deskripsi" type="text" value="{{old('deskripsi')}}" name="deskripsi"></textarea>
+            <textarea class="form-control" rows="5" id="deskripsi" placeholder="deskripsi" type="text" name="deskripsi">{{ $data->deskripsi }}
+            </textarea>
           </div>
-          <div class="form-group">
-            <label for="imageInput">File input</label>
-            <input  name="image" type="file" id="imageInput" value="{{old('image')}}" >
-            {{-- <img class="col-sm-6" id="preview"  src="" ></img> --}}
-            <p class="help-block">Example block-level help text here.</p>
-        </div>
-          <button class="btn btn-primary btn-block" type="submit">Tambah Sekolah</button>
+          <button class="btn btn-primary btn-block" type="submit">Update</button>
         </form>
       </div>
     </div>

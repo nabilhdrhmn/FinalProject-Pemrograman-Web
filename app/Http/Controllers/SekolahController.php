@@ -17,6 +17,10 @@ class SekolahController extends Controller
     public function index()
     {
         //
+        $data['school'] = Sekolah::all();
+
+        return view('dashboard', $data);
+
     }
 
     /**
@@ -37,7 +41,7 @@ class SekolahController extends Controller
      */
     public function tambah(Request $request)
     {
-        $sekolah= new Sekolah;
+        $sekolah= new Sekolah();
 
         $sekolah->nama_sekolah = $request->nama_sekolah;
 
@@ -45,11 +49,20 @@ class SekolahController extends Controller
 
         $sekolah->wilayah = $request->wilayah;
 
+        $sekolah->website = $request->website;
+
         $sekolah->deskripsi = $request->deskripsi;
+
+        $file = $request->file('image');
+        $fileName = time().'.'.$file->getClientOriginalExtension();
+        $destination = public_path('/image');
+        $file->move($destination, $fileName);
+
+        $sekolah->image = $fileName;
 
         $sekolah->save();
 
-        return view('/dashboard');
+        return redirect()->back();
     }
 
     /**
@@ -71,7 +84,9 @@ class SekolahController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Sekolah::find($id);
+        return view('admins.edit',['data' => $data]);
+
     }
 
     /**
@@ -83,7 +98,20 @@ class SekolahController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //echo $id;
+        $data = array(
+            'nama_sekolah' => $request->input('nama_sekolah'),
+            'alamat' => $request->input('alamat'),
+            'wilayah' => $request->input('wilayah'),
+            'deskripsi' => $request->input('deskripsi'),
+            'website' => $request->input('website')
+        );
+
+        
+        //dd($data);
+        Sekolah::find($id)->update($data);
+
+        return redirect()->back();
     }
 
     /**
@@ -94,6 +122,11 @@ class SekolahController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
+         $sekolah = Sekolah::find($id);
+         $sekolah->delete();
+
+        //return view('dashboard');
+         return redirect()->back();
     }
 }

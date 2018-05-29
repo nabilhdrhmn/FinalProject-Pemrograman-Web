@@ -7,112 +7,31 @@
 
       <!-- Page Heading -->
       <h1 class="my-4">
-        <small>Wilayah {{$data}} :</small>
+        @foreach($data as $skul)
+        <small>Wilayah {{$skul->wilayah}} :</small>
+        @endforeach
+        @php unset($skul); @endphp
       </h1>
 
       <div class="row">
+        @foreach($data as $data)
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href=""><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href=""><img class="card-img-top" src="/image/{{$data->image}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="">Project One</a>
+                <a href="">{{$data->nama_sekolah}}</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p class="card-text"></p>
             </div>
             <hr>
             <div align="center">
-              <a class="btn btn-primary btn-md" data-toggle="modal" data-target="#detilsekolah">Lihat Detil</a>
+              <a class="btn btn-primary btn-md" href="">Lihat Detil</a>
               <br><br>
             </div>
           </div>
         </div>
-        
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Two</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <hr>
-            <div align="center">
-              <a class="btn btn-primary btn-md">Test</a>
-              <br><br>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Three</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-            </div>
-            <hr>
-            <div align="center">
-              <a class="btn btn-primary btn-md">Test</a>
-              <br><br>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Four</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <hr>
-            <div align="center">
-              <a class="btn btn-primary btn-md">Test</a>
-              <br><br>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Five</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <hr>
-            <div align="center">
-              <a class="btn btn-primary btn-md">Test</a>
-              <br><br>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Six</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-            </div>
-            <hr>
-            <div align="center">
-              <a class="btn btn-primary btn-md">Test</a>
-              <br><br>
-            </div>
-          </div>
-        </div>
-      </div>
+        @endforeach
       <!-- /.row -->
       <br><br>
       <!-- Pagination -->
