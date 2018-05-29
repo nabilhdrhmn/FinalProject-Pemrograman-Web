@@ -7,7 +7,7 @@
     <div class="card card-login mx-auto mt-5">
       <div class="card-header">Tambah Data Sekolah</div>
       <div class="card-body">
-        <form method="POST" action="{{url('/tambahdata')}}"> {{ csrf_field()}}
+        <form method="POST" action="{{url('/tambahdata')}}" enctype="multipart/form-data"> {{ csrf_field()}}
           <div class="form-group">
             <label for="nama_sekolah">Nama Sekolah</label>
             <input class="form-control" id="nama_sekolah" name="nama_sekolah" type="text"  placeholder="password" value="{{old('nama_sekolah')}}">
@@ -28,10 +28,10 @@
             <label for="deskripsi">Deskripsi</label>
             <textarea class="form-control" rows="5" id="deskripsi" placeholder="deskripsi" type="text" value="{{old('deskripsi')}}" name="deskripsi"></textarea>
           </div>
-          <div class="form-group">    
+          <div class="form-group">
             <label for="imageInput">File input</label>
-            <input data-preview="#preview" name="image" type="file" id="imageInput" value="{{old('image')}}">
-            <img class="col-sm-6" id="preview"  src="" ></img>
+            <input  name="image" type="file" id="imageInput" value="{{old('image')}}" >
+            {{-- <img class="col-sm-6" id="preview"  src="" ></img> --}}
             <p class="help-block">Example block-level help text here.</p>
         </div>
           <button class="btn btn-primary btn-block" type="submit">Tambah Sekolah</button>
